@@ -21,19 +21,19 @@ class LinkedListNode:
 class LinkedList:
 
     def __init__(self) -> None:
-        self._size = 0
-        self._tail = None
+        self.size = 0
+        self.tail = None
         self.head = None
 
     def add(self, data: any) -> None:
         node = LinkedListNode(data)
         if self.head is None:
-            self.head = self._tail = node
+            self.head = self.tail = node
         else:
-            self._tail.next = node
-            self._tail = node
+            self.tail.next = node
+            self.tail = node
 
-        self._size += 1
+        self.size += 1
 
     def to_array(self) -> list:
         arr = []
