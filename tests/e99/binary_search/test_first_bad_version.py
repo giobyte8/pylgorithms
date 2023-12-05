@@ -1,4 +1,4 @@
-from e99.binary_search.first_vad_version import API, first_bad_version
+from e99.binary_search.first_bad_version import API, first_bad_version
 
 
 def test_case_1():
